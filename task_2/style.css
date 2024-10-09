@@ -1,0 +1,174 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* STYLE CSS */
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    width: 100%;
+    background-color: #00aa5b;
+    font: 16px/28px monospace;
+}
+
+/* 1. Style Main-Container */
+.main-container{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border: 3px solid #00aa5b;
+    margin: 10px auto;
+}
+
+/* 2. Style Judul */
+.judul {
+    margin-top: 50px;
+    padding: 40px 0;
+  }
+  
+.judul > h1 {
+    font-size: 24px;
+    color: #00aa5b;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.judul > h4 {
+    font-size: 14px;
+    color: #00aa5b;
+    text-align: center;
+}
+.judul h4 b {
+    font-weight: bolder;
+}
+
+/* 3. Style Form */
+.input-area form label{
+    margin-left: 123px;
+}
+
+.input-area form .lname{
+    margin-left: 75px;
+}
+
+.input-area form #email{
+    display: block;
+    margin-left: 123px;
+    width: 340px;
+    height: 25px;
+}
+
+.input-area form #fname{
+    display: inline-block;
+    margin-left: 123px;
+}
+
+.input-area form #lname{
+    display: inline-block;
+}
+
+.input-area form #password{
+    display: block;
+    margin-left: 123px;
+    width: 340px;
+    height: 25px;
+}
+
+.input-area form a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-area form .daftar{
+    width: 350px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #00aa5b;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input-area form .footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+/* Style Bagian Halaman Informasi */
+.container{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.table-area table tr{
+    font-size: 14px;
+}
+
+.table-area table td{
+    width: 200px;
+}
+
+.table-area a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.table-area .download{
+    margin-top: 10px;
+    cursor: pointer;
+}

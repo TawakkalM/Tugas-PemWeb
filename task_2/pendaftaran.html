@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="judul">
+            <h1>Mari bergabung dengan kita!</h1>
+            <h4>Dapatkan penawaran <b>menarik</b> dengan harga yang murah</h4>
+        </div>
+        <div class="input-area">
+            <form action="informasi.html" method="post">
+                <label for="email">Email Address*</label>
+                <input type="text" id="email" name="email" placeholder="your@super.agency" required>
+
+                <label for="fname">First Name*</label>
+                <label class="lname" for="lname">Last Name*</label>
+                <input type="text" id="fname" name="fname" placeholder="Alex" required>
+                <input type="text" id="lname" name="lname" placeholder="Collins" required>
+
+                <label for="password">Password (must be at least 8 characters)*</label>
+                <input type="password" id="password" name="password" placeholder="Choose your password" required>
+
+                <a href="./informasi.html" target="_blank" >
+                    <button class="daftar" type="submit">Daftar</button>
+                </a>
+                <h4 class="footer-text">
+                    By continuing, you agree to our Terms of use
+                </h4>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
