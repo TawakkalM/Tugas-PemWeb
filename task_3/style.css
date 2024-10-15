@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Nunito";
+    font-size: 14px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    color: white;
+}
+
+p::selection {
+    color: #ffc123;
+    background-color: grey;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    margin-bottom: 80px;
+}
+
+/* Header Style */
+header{
+    background-color: #4b4b4b;
+}
+
+header h3{
+    color: white;
+}
+
+.header-title{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.header-title h1, h3{
+    font-size: 20px;
+}
+
+/* Navbar Style */
+aside{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 1200px;
+    background-color: #c4c4c4;
+    padding: 20px 20px 20px 0px;
+}
+
+nav{
+    background-color: #4b4b4b;
+    height: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav ul li a{
+    font-size: 18px;
+}
+
+/* Main Style */
+#main{
+    padding: 80px 20px;
+    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    max-width: calc(100vw - 220px); 
+}
+
+/* Home Style */
+#home{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.home-left h1, h3, p{
+    color: black;
+}
+
+.home-left h3{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: #232e35;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 0;
+}
+
+.home-name{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 8px 0 16px; /* atas(8px), kiri & kanan(0px), bawah(16px)*/
+}
+
+.home-name span{
+    font-size: 30px;
+    color: #7e74f1;
+}
+
+.home-right img{
+    width: 90%;
+}
+
+.home-right{
+    display: flex;
+    justify-content: center;
+}
+
+/* Proyek Style */
+.pre-title{
+    margin-bottom: 20px;
+    padding-left: 55px;
+}
+
+.project-grid{
+    width: 90%;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 48px;
+}
+
+.project{
+    height: 470px;
+    border: solid 1px #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.project h4{
+    color: black;
+    font-size: 16.8px;
+    font-weight: 550;
+}
+
+.project-cover{
+    height: 250px;
+}
+
+.project-info{
+    padding: 32px 24px;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title a{
+    width: 24px;
+    height: 24px;
+}
+
+.project-title a svg{
+    transition: 0.3s ease-in-out;
+}
+
+.project-title a svg:hover{
+    fill: #5d51e8;
+}
+
+.project-tags{
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.project-tags div{
+    border: 1px solid #f1f1f1;
+    padding: 6.4px 16px;
+}
+
+/* Footer Style */
+footer{
+    background-color: #4b4b4b;
+}
+
+.footer-text{
+    height: 30px;
+    text-align: center;
+}
+
+.footer-text h1{
+    font-size: 14px;
+}
+
+/* Styling untuk tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    aside {
+        width: 180px;
+    }
+
+    #main {
+        margin-left: 200px;
+        padding: 60px 20px;
+        max-width: calc(100vw - 200px);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .home-right img {
+        width: 80%;
+    }
+
+    .home-left h1, .home-left h3 {
+        font-size: 22px;
+    }
+
+    .home-name {
+        font-size: 26px;
+    }
+}
+
+/* Styling untuk Handphone (max-width: 600px) */
+@media screen and (max-width: 600px) {
+    aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    nav{
+        height: 50px;
+        padding: 10px 0;
+        margin: 0 10px;
+        border-radius: 8px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    #main {
+        margin-left: 0;
+        padding: 40px 20px;
+        max-width: 100%;
+    }
+
+    /* Home section */
+    #home {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home-right img {
+        width: 100%;
+    }
+
+    .home-left{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-left h3 {
+        font-size: 18px;
+    }
+
+    .home-left h1{
+        font-size: 30px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .project {
+        height: auto;
+    }
+
+    .project-cover {
+        height: auto;
+    }
+
+    .project-info {
+        padding: 24px;
+    }
+}
