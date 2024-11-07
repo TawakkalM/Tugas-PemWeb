@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Tawakkal Rabbani M</title>
+
+    <!-- Menyertakan file CSS eksternal -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Menghubungkan ke Google Fonts dengan font 'Montserrat' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Bagian utama halaman yang menampilkan produk dan keranjang belanja -->
+    <section id="main">
+        <div class="container">
+            
+            <!-- Area kiri untuk daftar produk -->
+            <div class="left-area">
+                <div class="title">
+                    <h1>Our Products</h1> <!-- Judul daftar produk -->
+                </div>
+                <div class="products">
+                    <div class="products-area">
+                        <!-- Tempat produk akan ditambahkan secara dinamis melalui JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area kanan untuk item keranjang belanja -->
+            <div class="right-area">
+                <div class="title">
+                    <h1>Cart Items</h1> <!-- Judul untuk keranjang belanja -->
+                </div>
+                <div class="listCart">
+                    <!-- Tempat item keranjang akan ditampilkan secara dinamis -->
+                </div>
+                
+                <!-- Ringkasan harga dengan subtotal, diskon, dan total -->
+                <div class="price-summary">
+                    <div class="subtotal">Subtotal: Rp 0</div> <!-- Menampilkan subtotal harga -->
+                    <div class="discount">Diskon: Rp 0</div> <!-- Menampilkan diskon -->
+                    <div class="total">Total: Rp 0</div> <!-- Menampilkan total harga setelah diskon -->
+                </div>
+
+                <!-- Tombol untuk mengosongkan keranjang dan checkout -->
+                <div class="btn">
+                    <button class="clearCart">Clear Cart</button> <!-- Tombol untuk mengosongkan keranjang -->
+                    <button class="checkOut">Check Out</button> <!-- Tombol untuk melakukan checkout -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menyertakan file JavaScript eksternal -->
+    <script src="./script.js"></script>
+</body>
+</html>

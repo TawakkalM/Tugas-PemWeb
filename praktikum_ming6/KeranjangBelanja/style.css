@@ -1,0 +1,166 @@
+/* Mengatur tampilan latar belakang dan font utama */
+body {
+    background-color: #efefef;
+    font-family: "Montserrat";
+}
+
+/* Mengatur tampilan tautan */
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Style untuk bagian utama (#main) */
+#main {
+    width: 1000px; /* Lebar utama halaman */
+    margin: auto; /* Pusatkan konten secara horizontal */
+}
+
+#main .container {
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Kolom untuk area produk dan keranjang */
+}
+
+#main .container h1 {
+    color: #560bad; /* Warna judul utama */
+}
+
+/* Akhir dari style bagian utama */
+
+/* Style untuk bagian Produk */
+.products-area {
+    display: grid;
+    grid-template-columns: repeat(2, 250px); /* Menampilkan 2 kolom produk */
+    align-items: center;
+    gap: 30px; /* Jarak antar produk */
+    margin-right: 100px; /* Jarak dari tepi kanan */
+}
+
+.product {
+    height: 350px;
+    border: solid 1px #CCCCCC; /* Border abu-abu pada produk */
+    overflow: hidden;
+    border-radius: 10px; /* Membulatkan sudut produk */
+}
+
+.product-cover {
+    height: 250px; /* Tinggi area gambar produk */
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 100%; /* Gambar menyesuaikan lebar produk */
+    height: 100%;
+    object-fit: cover; /* Gambar terpotong untuk mengisi area */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Jarak antar elemen dalam info produk */
+}
+
+.product-info h4 {
+    padding: 0 10px;
+    margin: 0;
+    font-weight: 500; /* Tebal teks untuk nama produk */
+}
+
+.product-info h4:nth-child(2) {
+    font-weight: 300; /* Tebal teks untuk harga produk */
+}
+
+.product-info .add-cart {
+    width: 220px;
+    height: 25px;
+    border: solid 1.8px #560bad; /* Border untuk tombol 'Add to Cart' */
+    border-radius: 5px;
+    transition: 0.3s ease; /* Efek transisi saat hover */
+    cursor: pointer;
+    color: #560bad;
+    font-weight: 550;
+}
+
+.product-info .add-cart:hover {
+    background-color: #501099; /* Warna latar belakang saat dihover */
+    color: #efefef; /* Warna teks saat dihover */
+}
+
+/* Akhir dari style Produk */
+
+/* Style untuk area kanan (keranjang) */
+.right-area {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    right: 200px; /* Posisi tetap di kanan halaman */
+    display: grid;
+    grid-template-rows: 70px 1fr 100px 70px; /* Struktur area kanan */
+    background-color: #d5d5d5; /* Latar belakang area kanan */
+}
+
+.right-area .title h1 {
+    text-align: center; /* Judul keranjang ditengah */
+}
+
+.right-area .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Tampilkan tombol dalam 2 kolom */
+}
+
+.right-area .btn button {
+    background-color: #501099; /* Warna dasar tombol */
+    border: none;
+    color: #efefef;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right-area .btn .clearCart {
+    background-color: #b1afaf; /* Warna khusus tombol 'Clear Cart' */
+}
+
+.right-area .listCart .item {
+    display: grid;
+    grid-template-columns: 100px 80px 1fr; /* Struktur tampilan item di keranjang */
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 12px; /* Ukuran font item keranjang */
+}
+
+.listCart .quantity span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%; /* Membuat tombol kuantitas bulat */
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(odd) {
+    font-size: 16px;
+}
+
+.listCart .quantity span:nth-child(2) {
+    background-color: transparent; /* Menghilangkan latar untuk kuantitas */
+}
+
+.listCart .item:nth-child(even) {
+    background-color: #e3e3e3; /* Warna latar untuk setiap item genap di keranjang */
+}
+
+/* Style untuk ringkasan harga di area kanan */
+.price-summary {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Border ringkasan harga */
+}
+
+.price-summary div {
+    margin: 5px 0;
+}
+/* Akhir dari style area kanan */
